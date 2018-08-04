@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Niranjana
+Build-Jdk: 10.0.1
+Implementation-Title: Bidhu Spring Boot API
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: co.bidhu.springbootquickstart
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring-boot
+Created-By: Maven Integration for Eclipse
+
