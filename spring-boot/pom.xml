@@ -20,6 +20,9 @@
  
 	
   </dependencies>
+  <packaging>
+    war
+    </packaging>
   <properties>
    <javaVersion>1.9</javaVersion>
   </properties>
@@ -32,5 +35,6 @@
             </plugin>
         </plugins>
     </build>
+    
   
 </project>
