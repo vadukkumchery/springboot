@@ -12,7 +12,7 @@ public class TopicService {
 	List<Topic> topics = new ArrayList <> (Arrays.asList(new Topic("spring","Spring Frame Wokr", "Spring Framework Description"),
 			new Topic("java","Core Java", "Core Java Description"),
 			new Topic("js","Node JS", "NodeJs Description"),
-			new Topic("aws","Amazon Web Service", "Amazon webservices descrption")));
+			new Topic("aws","Amazon Web Service", "Amazon Web Services lambda")));
 	
 	public List<Topic> getAllTopics(){
 		return topics;
