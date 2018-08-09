@@ -8,8 +8,8 @@
 	
 	<div class="container-fluid"  ng-controller = "springController">
 	<br><br>
-	<h1 class="pageHeader">Spring Boot Demo App with Angular JS</h1>
-	<hr>
+	<h2 class="pageHeader">Spring Boot Demo App with Angular JS</h2>
+	
 	 
 	
 		<table class="table table-stripped">
@@ -29,6 +29,22 @@
 			
 			</tbody>
 		</table>
+		<div class="panel panel-primary">
+			<div class="panel-heading">Add Topics</div>
+			<div class="panel-body">
+				
+				<div class = "form-group">
+					
+					<div > <label for="id">id:</label></div>
+					<div>	<input type="text" ng-model="topicid" id="id">{{topicid}} </div>
+					<div > <label for="name">Name:</label></div>
+					<div> <input type="text" ng-model="topicname" id ="name">{{topicname}} </div>
+					<div > <label for="desc">Description:</label></div>
+					<div><input type="text" ng-model="topicdescription" id="desc">{{topicdescription}} </div>
+					<button class="btn btn-primary btn-md" ng-click="add()" > Add </button>
+				</div>
+			</div>
+		</div> 
 	</div>
 		
 </body>

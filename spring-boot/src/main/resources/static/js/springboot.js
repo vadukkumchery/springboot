@@ -8,6 +8,28 @@ var app = angular.module("springModule", []).controller("springController", func
 	}).catch(function(reason) {
 		
 	});
+	
+	$scope.add = function(){
+			
+		var topicdata = {
+							id : $scope.topicid,
+							name : $scope.topicname, 
+							description : $scope.topicdescription
+							};
+	
+		$http.post('http://localhost/topics', topicdata).then(function(value) {
+			$scope.success=value;
+		}, function(reason) {
+			$scope.reason = reason;
+			
+		}, function(value) {
+			$scope.value = value;
+		});
+	
+		
+	};
+	
+	
 });
 	
 	
