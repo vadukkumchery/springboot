@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class TopicController {
 	
 	@Autowired
 	private TopicService topicService;
 
 	@RequestMapping("/topics")
-	@CrossOrigin
 	public List<Topic> getAllTopics() {
 		return topicService.getAllTopics();
 	}
