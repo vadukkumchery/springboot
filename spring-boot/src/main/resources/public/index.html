@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> Boot App with CD</title>
+
+
+</head>
+<body ng-app="springModule">
+	
+	<div class="container-fluid"  ng-controller = "springController">
+	<br><br>
+	<h1 class="pageHeader">Spring Boot Demo App with Angular JS</h1>
+	<hr>
+	 
+	
+		<table class="table table-stripped">
+			<thead>
+				<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat = "topic in topics">
+					<td>{{topic.id}}</td>
+					<td>{{topic.name}}</td>
+					<td>{{topic.description}}</td>
+				</tr>
+			
+			</tbody>
+		</table>
+	</div>
+		
+</body>
+
+<script src="js/lib/angular.js"></script>
+<link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+<script src="js/springboot.js" ></script>
+
+</html>
